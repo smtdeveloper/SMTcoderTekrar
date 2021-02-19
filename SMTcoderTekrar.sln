@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RefAndOut", "RefAndOut\RefA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassIntro", "ClassIntro\ClassIntro.csproj", "{F7475284-5432-4C32-A0E3-40CC74B5B9A7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassMehodDemo", "ClassMehodDemo\ClassMehodDemo.csproj", "{29D2B48A-86FF-463D-927C-2719C4B6B350}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{F7475284-5432-4C32-A0E3-40CC74B5B9A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7475284-5432-4C32-A0E3-40CC74B5B9A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7475284-5432-4C32-A0E3-40CC74B5B9A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29D2B48A-86FF-463D-927C-2719C4B6B350}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29D2B48A-86FF-463D-927C-2719C4B6B350}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29D2B48A-86FF-463D-927C-2719C4B6B350}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29D2B48A-86FF-463D-927C-2719C4B6B350}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
