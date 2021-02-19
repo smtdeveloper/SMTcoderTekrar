@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Methods", "Methods\Methods.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RefAndOut", "RefAndOut\RefAndOut.csproj", "{C0632BE8-18AA-4EE3-A47D-CA4CFDE909C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassIntro", "ClassIntro\ClassIntro.csproj", "{F7475284-5432-4C32-A0E3-40CC74B5B9A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassIntro", "ClassIntro\ClassIntro.csproj", "{F7475284-5432-4C32-A0E3-40CC74B5B9A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassMehodDemo", "ClassMehodDemo\ClassMehodDemo.csproj", "{29D2B48A-86FF-463D-927C-2719C4B6B350}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassMehodDemo", "ClassMehodDemo\ClassMehodDemo.csproj", "{29D2B48A-86FF-463D-927C-2719C4B6B350}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDictionary", "MyDictionary\MyDictionary.csproj", "{84FB1BD1-8B69-4EA6-8F28-73273B90FBE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{29D2B48A-86FF-463D-927C-2719C4B6B350}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29D2B48A-86FF-463D-927C-2719C4B6B350}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29D2B48A-86FF-463D-927C-2719C4B6B350}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84FB1BD1-8B69-4EA6-8F28-73273B90FBE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84FB1BD1-8B69-4EA6-8F28-73273B90FBE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84FB1BD1-8B69-4EA6-8F28-73273B90FBE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84FB1BD1-8B69-4EA6-8F28-73273B90FBE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
