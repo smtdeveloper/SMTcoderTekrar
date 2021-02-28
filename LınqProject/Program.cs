@@ -18,19 +18,80 @@ namespace LınqProject
             {
                 new Product{ ProductId = 1 , CategoryId = 1, ProductName = "Monster Laptop" , QuantityPerUnit = "32 GB" , UnitPrice = 9000, UnitInStok = 3 },
                 new Product{ ProductId = 2 , CategoryId = 2, ProductName = "Samsung S8 Telefon" , QuantityPerUnit = "16 GB" , UnitPrice = 3000, UnitInStok = 8 },
-                new Product{ ProductId = 3 , CategoryId = 2, ProductName = "Samsung S4 Telefon" , QuantityPerUnit = "8 GB" , UnitPrice = 1000, UnitInStok = 5 },
-                new Product{ ProductId = 4 , CategoryId = 1, ProductName = "HP Laptop" , QuantityPerUnit = " 8 GB" , UnitPrice = 5000, UnitInStok = 9 },
+                new Product{ ProductId = 3 , CategoryId = 2, ProductName = "Samsung S4 Telefon" , QuantityPerUnit = "8 GB" , UnitPrice = 500, UnitInStok = 5 },
+                new Product{ ProductId = 4 , CategoryId = 2, ProductName = "Samsung S7 Telefon" , QuantityPerUnit = "12 GB" , UnitPrice = 2000, UnitInStok = 5 },
+                new Product{ ProductId = 5 , CategoryId = 1, ProductName = "HP Laptop" , QuantityPerUnit = " 8 GB" , UnitPrice = 4000, UnitInStok = 9 },
             };
 
+            //TestLinq(products);
+
+            //GetProducts(products);
+
+            //TestAny(products);
+
+            //TestFind(products);
+
+            //TestFindAll(products);
+
+            //TestOrderBy(products);
+
+
+            // LINQ farklı yazılsı
+            var result = from p in products
+                         where p.UnitPrice >= 3000 && p.UnitInStok > 2
+                         orderby p.UnitPrice
+                         select p;
+
+            foreach (var item in result)
+            {
+                Console.WriteLine(" ProductName :  " + item.ProductName);
+            }
+
+        }
+
+        private static void TestOrderBy(List<Product> products)
+        {
+            // string arama = Contains("Sam")
+            // ThenBy = den sonra kendi içinde sırala demek 
+            var result = products.Where(p => p.ProductName.Contains("Sam")).OrderByDescending(p => p.UnitPrice).ThenBy(p => p.ProductName);
+
+
+            foreach (var item in result)
+            {
+                Console.WriteLine(" Arama sonucunuz : " + item.ProductName);
+            }
+        }
+
+        private static void TestFindAll(List<Product> products)
+        {
+            var result = products.FindAll(p => p.ProductName.Contains("Sam"));
+            Console.WriteLine(result);
+        }
+
+        private static void TestFind(List<Product> products)
+        {
+            //Lambda 
+            var result = products.Find(p => p.ProductId == 2);
+            Console.WriteLine(result.ProductName);
+        }
+
+        private static void TestAny(List<Product> products)
+        {
+            var result = products.Any(p => p.ProductName == "Monster Laptop");
+            Console.WriteLine(result);
+        }
+
+        private static void TestLinq(List<Product> products)
+        {
             // && ve
             Console.WriteLine("Algoritmatik---------------- ");
             foreach (var item in products)
             {
-                if (item.UnitPrice >= 5000  && item.UnitInStok> 3)  
+                if (item.UnitPrice >= 5000 && item.UnitInStok > 3)
                 {
                     Console.WriteLine(item.ProductName);
                 }
-              
+
             }
 
             Console.WriteLine("LINQ İLE----------");
@@ -40,9 +101,7 @@ namespace LınqProject
             foreach (var item in result)
             {
                 Console.WriteLine(item.ProductName);
-            } 
-
-            GetProducts(products);
+            }
         }
 
         // Algoritmatik 
