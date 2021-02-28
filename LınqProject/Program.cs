@@ -40,7 +40,7 @@ namespace LınqProject
             foreach (var item in result)
             {
                 Console.WriteLine(item.ProductName);
-            }
+            } 
 
             GetProducts(products);
         }
